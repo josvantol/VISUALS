@@ -327,10 +327,12 @@ void Visuals::keyPressed(int key)
   {
     ButtonDown = true;
 
+#if DEBUG
     if(key == 'd')
     {
       DebugInfo();
     }
+#endif
 
     if(key == OF_KEY_ESC)
     {
